@@ -14,7 +14,7 @@ public class JdbcConnectivity{
 		try {
 			String url = "jdbc:mysql://localhost:3306/";
 			String userName = "root";
-			String pass = "pass123";
+			String pass = "root123";
 			conn = DriverManager.getConnection(url,userName,pass);
 		}
 		catch(Exception e) {

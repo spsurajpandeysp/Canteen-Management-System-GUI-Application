@@ -19,15 +19,15 @@ public class SalesBoyPage {
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.insets = new Insets(10, 10, 10, 10);
 
-        JButton bt1 = new JButton("Stock Update");
-        bt1.setBackground(Color.BLUE);
-        bt1.setForeground(Color.WHITE);
-        bt1.setFont(new Font("Arial", Font.BOLD, 18));
-        gbc.gridx = 0;
-        gbc.gridy = 0;
-        gbc.gridwidth = 2;
-        gbc.fill = GridBagConstraints.BOTH;
-        frame.add(bt1, gbc);
+//        JButton bt1 = new JButton("Stock Update");
+//        bt1.setBackground(Color.BLUE);
+//        bt1.setForeground(Color.WHITE);
+//        bt1.setFont(new Font("Arial", Font.BOLD, 18));
+//        gbc.gridx = 0;
+//        gbc.gridy = 0;
+//        gbc.gridwidth = 2;
+//        gbc.fill = GridBagConstraints.BOTH;
+//        frame.add(bt1, gbc);
 
         JButton bt2 = new JButton("Take Order");
         bt2.setBackground(Color.BLUE);
@@ -73,12 +73,12 @@ public class SalesBoyPage {
         gbc.gridwidth = 2;
         frame.add(backButton, gbc);
 
-        bt1.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                StockUpdate su = new StockUpdate();
-                 
-            }
-        });
+//        bt1.addActionListener(new ActionListener() {
+//            public void actionPerformed(ActionEvent e) {
+//                StockUpdate su = new StockUpdate();
+//                 
+//            }
+//        });
 
         bt2.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
