@@ -85,7 +85,7 @@ The **Canteen Management System** is a GUI-based desktop application built using
 ---
 
 ## Interface
-![Login Page](../src/readmemedia/loginimage.png)
+![Login Page](./src/readmemedia/loginimage.png)
 
 ## Contact
 For any inquiries or support, feel free to contact:
