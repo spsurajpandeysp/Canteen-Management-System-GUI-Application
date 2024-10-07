@@ -13,8 +13,8 @@ public class JdbcConnectivity{
 	public JdbcConnectivity() {
 		try {
 			String url = "jdbc:mysql://localhost:3306/";
-			String userName = "root";
-			String pass = "root123";
+			String userName = "";
+			String pass = "";
 			conn = DriverManager.getConnection(url,userName,pass);
 		}
 		catch(Exception e) {

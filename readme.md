@@ -102,13 +102,13 @@ The **Canteen Management System** is a GUI-based desktop application built using
 ---
 
 ### Add Product Panel
-![Add Product Panel](./src/readmemedia/addproductimage.png)
-
-### Statistics Panel of Employee
-![Statistics Panel of Employee](./src/readmemedia/stat.image.png)
+![Add Product Panel](./src/readmemedia/productaddimage.png)
 
 ### Modify Product Panel
-![Modify Product Panel](./src/readmemedia/deleteproductimage.png)
+![Modify Product Panel](./src/readmemedia/productmodify.png)
+
+### Add Product Panel
+![Add Product Panel](./src/readmemedia/productdeleteimage.png)
 
 ### Statistics Panel of Admin
 ![Statistics Panel of Admin](./src/readmemedia/stat.image.png)
