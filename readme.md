@@ -131,52 +131,9 @@ The **Canteen Management System** is a GUI-based desktop application built using
 - **Employee Table**: Stores employee records.
 - **Customer Table**: Records customer information, including contact details and purchase history.
 - **Orders Table**: Records information about placed orders and bill generation.
+- **Orders History Table (optional)**: Maintains a history of all past orders for comprehensive tracking of customer activity.
 
 ---
-
-
-## Interface
-
-### Login Panel
-![Login Panel](./src/readmemedia/loginimage.png)
-
-### Admin Panel
-![Admin Panel](./src/readmemedia/adminimage.png)
-
-### Add Employee Panel
-![Add Employee Panel](./src/readmemedia/addemployeeimage.png)
-
-### Delete Employee Panel
-![Delete Employee Panel](./src/readmemedia/deleteemployeeimage.png)
-
----
-
-### Add Product Panel
-![Add Product Panel](./src/readmemedia/addproductimage.png)
-
-### Statistics Panel of Employee
-![Statistics Panel of Employee](./src/readmemedia/stat.image.png)
-
-### Modify Product Panel
-![Modify Product Panel](./src/readmemedia/deleteproductimage.png)
-
-### Statistics Panel of Admin
-![Statistics Panel of Admin](./src/readmemedia/stat.image.png)
-
----
-
-### Employee Panel
-![Employee Panel](./src/readmemedia/employeeimage.png)
-
-### Take Order Panel
-![Take Order Panel](./src/readmemedia/takeorderimage.png)
-
-### Bill Panel
-![Bill Panel](./src/readmemedia/billimage.png)
-
-### Statistics Panel of Employee
-![Statistics Panel of Employee](./src/readmemedia/stat.image.png)
-
 
 ## Contact
 For any inquiries or support, feel free to contact:
