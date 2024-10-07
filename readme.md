@@ -4,6 +4,20 @@
 ## Project Overview
 The **Canteen Management System** is a GUI-based desktop application built using Java, JDBC, MySQL, and Java Swing. It is designed to simplify and streamline canteen operations by providing two distinct modes: **Admin** and **Employee**. The Admin mode allows management of product details and employee records, while the Employee mode facilitates order placement and bill generation.
 
+## Interface
+
+| Login Panel | Admin Panel | Add Employee Panel | Delete Employee Panel |
+|-------------|-------------|---------------------|-----------------------|
+| ![Login Panel](./src/readmemedia/loginimage.png) | ![Admin Panel](./src/readmemedia/adminimage.png) | ![Add Employee Panel](./src/readmemedia/addemployeeimage.png) | ![Delete Employee Panel](./src/readmemedia/deleteemployeeimage.png) |
+
+| Add Product Panel |  Modify Product Panel | Delete Product Panel | Statistics Panel of Admin |
+|-------------------|------------------------------|----------------------|---------------------------|
+| ![Add Product Panel](./src/readmemedia/productaddimage.png) | ![Modify Product Panel](./src/readmemedia/productmodifyimage.png) | ![Delete Product Panel](./src/readmemedia/deleteproductimage.png) | ![Statistics Panel of Admin](./src/readmemedia/stat.image.png) |
+
+| Employee Panel | Take Order Panel | Bill Panel | Statistics Panel of Employee |
+|----------------|------------------|------------|------------------------------|
+| ![Employee Panel](./src/readmemedia/employeeimage.png) | ![Take Order Panel](./src/readmemedia/takeorderimage.png) | ![Bill Panel](./src/readmemedia/billimage.png) | ![Statistics Panel of Employee](./src/readmemedia/stat.image.png) |
+
 ### Admin Mode
 - **Product Management**: Add, delete, and modify product details (name, price, stock).
 - **Employee Management**: Add or remove employees from the system.
@@ -48,29 +62,64 @@ The **Canteen Management System** is a GUI-based desktop application built using
    git clone https://github.com/yourusername/canteen-management-system.git
    ```
 
-2. **Configure the Database**:
+4. **Configure the Database**:
    - Install MySQL.
-   - Run this SQL script: 
-     -> CREATE DATABASE 
+   - Run the following SQL script to create the database and necessary tables:
 
-     -> USE CMSDATA
+     ```sql
+     CREATE DATABASE CMSDATA;
 
-     -> CREATE TABLE STOCK(PRODUCT_ID INT PRIMARY KEY,PRODUCT_NAME VARCHAR(50),PORTION_SIZE VARCHAR(50),DISCOUNT INT,PRICE INT,TOTAL_QTY INT);
+     USE CMSDATA;
 
-	  -> CREATE TABLE CUSTOMER(FIRST_NAME VARCHAR(50),LAST_NAME VARCHAR(50),PHONE_NO BIGINT,TOTAL_AMOUNT INT,TOTAL_DISCOUNT INT,PAID_AMOUNT INT,    DATE_OF_PURCHASE DATE DEFAULT(CURRENT_DATE));
+     CREATE TABLE STOCK (
+         PRODUCT_ID INT PRIMARY KEY,
+         PRODUCT_NAME VARCHAR(50),
+         PORTION_SIZE VARCHAR(50),
+         DISCOUNT INT,
+         PRICE INT,
+         TOTAL_QTY INT
+     );
 
-	  -> CREATE TABLE PURCHASED(PRODUCT_NAME VARCHAR(50),PORTION_SIZE VARCHAR(50),DISCOUNT INT,PRICE INT,TOTAL_QTY INT);
+     CREATE TABLE CUSTOMER (
+         FIRST_NAME VARCHAR(50),
+         LAST_NAME VARCHAR(50),
+         PHONE_NO BIGINT,
+         TOTAL_AMOUNT INT,
+         TOTAL_DISCOUNT INT,
+         PAID_AMOUNT INT,
+         DATE_OF_PURCHASE DATE DEFAULT (CURRENT_DATE)
+     );
 
-	  -> CREATE TABLE EMPLOYEES(ID INT primary key,First_Name varchar(50),Last_Name varchar(50),PHONE_NO BIGINT,Email_Id varchar(50),Password varchar(50))
+     CREATE TABLE PURCHASED (
+         PRODUCT_NAME VARCHAR(50),
+         PORTION_SIZE VARCHAR(50),
+         DISCOUNT INT,
+         PRICE INT,
+         TOTAL_QTY INT
+     );
+
+     CREATE TABLE EMPLOYEES (
+         ID INT PRIMARY KEY,
+         FIRST_NAME VARCHAR(50),
+         LAST_NAME VARCHAR(50),
+         PHONE_NO BIGINT,
+         EMAIL_ID VARCHAR(50),
+         PASSWORD VARCHAR(50)
+     );
+     ```
    
 3. **Add MySQL Connector**:
    - Download the MySQL JDBC Connector and add it to your project dependencies.
+  
+4. **Change the connectivity details**:
+   - Navigate to `src/JDBC/JdbcConnectivity.java` and change the username and password according to your database configuration.
+ 
 
-4. **Run the Application**:
+5. **Run the Application**:
    - Open the project in your IDE.
    - Run the `login.java` file to launch the application.
 
-5. **Admin Mode Default Id and Password**:
+6. **Admin Mode Default Id and Password**:
    - id:123
    - password:Pass@123
    
@@ -80,6 +129,7 @@ The **Canteen Management System** is a GUI-based desktop application built using
 
 - **Product Table**: Contains product details such as name, price, and stock.
 - **Employee Table**: Stores employee records.
+- **Customer Table**: Records customer information, including contact details and purchase history.
 - **Orders Table**: Records information about placed orders and bill generation.
 
 ---
@@ -102,13 +152,13 @@ The **Canteen Management System** is a GUI-based desktop application built using
 ---
 
 ### Add Product Panel
-![Add Product Panel](./src/readmemedia/productaddimage.png)
+![Add Product Panel](./src/readmemedia/addproductimage.png)
+
+### Statistics Panel of Employee
+![Statistics Panel of Employee](./src/readmemedia/stat.image.png)
 
 ### Modify Product Panel
-![Modify Product Panel](./src/readmemedia/productmodify.png)
-
-### Add Product Panel
-![Add Product Panel](./src/readmemedia/productdeleteimage.png)
+![Modify Product Panel](./src/readmemedia/deleteproductimage.png)
 
 ### Statistics Panel of Admin
 ![Statistics Panel of Admin](./src/readmemedia/stat.image.png)
@@ -133,3 +183,6 @@ For any inquiries or support, feel free to contact:
 - **Name**: [Suraj Pandey]
 - **Email**: [surajpandey7493@gmail.com]
 - **GitHub**: [https://github.com/spsurajpandeysp](https://github.com/spsurajpandeysp)
+
+
+🌟 **Thank You for Taking the Time to Explore Our Project!** 🌟
