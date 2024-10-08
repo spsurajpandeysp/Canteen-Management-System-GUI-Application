@@ -139,7 +139,8 @@ The **Canteen Management System** is a GUI-based desktop application built using
 For any inquiries or support, feel free to contact:
 - **Name**: [Suraj Pandey]
 - **Email**: [surajpandey7493@gmail.com]
-- **GitHub**: [https://github.com/spsurajpandeysp](https://github.com/spsurajpandeysp)
+- **GitHub**: [https://github.com/spsurajpandeysp](https://github.com/spsurajpandeysp)]
+- **My Portfolio**: [https://github.com/spsurajpandeysp](https://surajpandey.vercel.app)]
 
 
 🌟 **Thank You for Taking the Time to Explore Our Project!** 🌟
